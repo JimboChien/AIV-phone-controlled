@@ -1,7 +1,7 @@
 # =========================================
-#  Author:        KanKunI
+#  Author:        JimboChien
 #  Date Created:  2020/08/21
-#  Last Updated:  2020/08/23
+#  Last Updated:  2021/03/12
 #  Description:   run mjpg-streamer script
 # =========================================
 
