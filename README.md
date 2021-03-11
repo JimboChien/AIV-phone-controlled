@@ -1,39 +1,55 @@
-# Setting Enveriment
-1. Download
+# A.I.V 模擬智慧車 --- 手機控制
 
- $ git clone
+## 📦 Installation
 
-2. update
+1. 將專案下載及更新
+    ```sh
+    $ git clone https://github.com/JimboChien/AIV-phone-controlled.git
+    ```
 
- $ sudo apt-get update
+2. 更新樹莓派 <img src="https://cdn.iconscout.com/icon/free/png-256/raspberry-pi-3-569254.png" width="20" height="20" />
+    ```sh
+    $ sudo apt-get update
+    ```
 
-# Webcam 
-1. Setup
+## <img src="https://cdn.iconscout.com/icon/free/png-256/arduino-4-569256.png" width="40" height="40" />Arduino
 
- $ ./mjpg_streamer_setup.sh
+Arduino 相關程式在 `Arduino` 資料夾下：
+| 名稱            | 說明                         |
+| :-------------: | :--------------------------  |
+| ir_distance     | 紅外線偵測距離               |
+| control_servo   | 控制車子行走                 |
+| avoid_obstacles | 結合紅外線偵測及控制車子行走 |
 
-2. Run
+## <img src="https://cdn.iconscout.com/icon/free/png-256/webcam-2044033-1724880.png" width="40" height="40" />Webcam
 
- $ ./webcam_sh.up
+1. 透過 `mjpg_streamer_setup.sh` 檔安裝相關套件
 
-3. To URL localhost:8090
+    ```shell
+    $ ./mjpg_streamer_setup.sh
+    ```
+    
+2. 啟動 webcam
 
-# Android 
-1. Install Android IDE
+    ```shell
+    $ ./webcam_sh.up
+    ```
 
- $ sudo apt-get install arduino
+3. 開啟瀏覽器，輸入 localhost:8090
 
-- IR : ir_distance
-- Control : control_servo
-- Combine : avoid_obstacles
+## 📱 手機控制
+1. 啟動 webcam 
 
-# Phone 
-1. Run Webcam
+    ```shell
+    $ ./webcam_sh.up
+    ```
+    
+2. 啟動 Socket Server
 
- $ ./webcam_sh.up
+    ```shell
+    $ python3 phone_control_server
+    ```
+    
+3. 打開 Android 手機<img src="https://cdn.iconscout.com/icon/free/png-256/android-247-1175275.png" width="20" height="20" />下載專用 app<img src="https://i.imgur.com/17YORkW.png" width="20" height="20" />
 
-2. Run Scocket Server
-
- $ python3 phone_control_server
-
-3. Use APP Connect To Raspberry Pi's IP
+4. 進入 app 後打開右上角設定⚙︎，輸入樹莓派<img src="https://cdn.iconscout.com/icon/free/png-256/raspberry-pi-3-569254.png" width="20" height="20" />IP位置
