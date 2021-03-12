@@ -17,9 +17,9 @@
 Arduino 相關程式在 `Arduino` 資料夾下：
 | 名稱            | 說明                         |
 | :-------------: | :--------------------------  |
-| ir_distance     | 紅外線偵測距離               |
-| control_servo   | 控制車子行走                 |
-| avoid_obstacles | 結合紅外線偵測及控制車子行走 |
+| [ir_distance](https://github.com/JimboChien/AIV-phone-controlled/tree/main/Arduino/ir_distance)     | 紅外線偵測距離               |
+| [control_servo](https://github.com/JimboChien/AIV-phone-controlled/tree/main/Arduino/control_servo)   | 控制車子行走                 |
+| [avoid_obstacles](https://github.com/JimboChien/AIV-phone-controlled/tree/main/Arduino/avoid_obstacles) | 結合紅外線偵測及控制車子行走 |
 
 ## <img src="https://cdn.iconscout.com/icon/free/png-256/webcam-2044033-1724880.png" width="40" height="40" />Webcam
 
